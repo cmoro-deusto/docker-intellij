@@ -1,4 +1,4 @@
 docker-intellij
 ===============
 
-Run Inellij Inside Docker
+Run IntelliJ Inside Docker
