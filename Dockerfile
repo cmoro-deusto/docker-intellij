@@ -28,6 +28,10 @@ ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 RUN curl -L http://download.jetbrains.com/idea/ideaIC-13.1.4b.tar.gz | tar xz
 RUN mv idea* idea
 
+RUN apt-get install -y libxi6
+RUN apt-get install -y libxtst6
+RUN apt-get install -y libxrender1
+
 #Add runit services
 ADD sv /etc/service 
 
